@@ -10,6 +10,7 @@
 body {
   font-size: 100%;
   background: linear-gradient(68.15deg, #1E90FF 16.62%, #008B8B 85.61%);
+  font-family: 'Poppins', sans-serif;
 }
 
 .cabecalho {
@@ -68,21 +69,10 @@ body {
   font-weight: 400;
   font-size: 24px;
   color: #F5F5F5;
+  width: 800px;
+  text-align: justify;
 }
 
-.conteudo-principal-escrito-botao {
-    background-color: #7289DA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Roboto Medium', sans-serif;
-    border-radius: 15px;
-    width: 290px;
-}
 .conteudo-principal-escrito-botao {
     background-color: #7289DA;
     border: none;
@@ -112,14 +102,17 @@ body {
   align-items: center;
   gap: 24px;
   margin-top: 2.6%;
+  color:#FFFFFF;
 }
 
 .conteudo-secundario-titulo {
   border-top: 0.4px solid #FFF2E7;
+  width: 30%;
   padding-top: 2.6%;
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 24px;
+  text-align: center;
   color: #0B3156;
   margin-bottom: 0.7%;
 }
@@ -128,7 +121,8 @@ body {
   font-family: 'Sarala', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #B2B4C7;
+  color: #FFFFFF;
+  width: 80%;
 }
 
 .rodape {
@@ -142,7 +136,7 @@ body {
   margin: 0 auto;
 }
 .rodape-direitos{
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -152,14 +146,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Poppins', sans-serif;
-}
 .about-wrapper{
     height: 100vh;
 }
@@ -280,7 +266,6 @@ body{
     margin: 2rem 0;
 }
 .btn{
-    border: none;
     font-size: 0.9rem;
     text-transform: uppercase;
     border: 2px solid #fff;
