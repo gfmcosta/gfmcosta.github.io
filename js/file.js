@@ -24,16 +24,26 @@ function create_table(){
                 codHTML+='<tr style="background-color:#FFFFFF;color:black">'
                 codHTML+='<th scope="row">'+ordem+'</th>'
                 codHTML+='<td>'+status.name+'</td>'
-                codHTML+='<td>'+status.html_url+'</td>'
-                codHTML+='<td>'+status.language+'</td>'
+                codHTML+='<td><a href="'+status.html_url+'" target=_blank>'+status.html_url+'</a></td>'
+                console.log(status.language)
+                if (status.language==null){
+                    codHTML+='<td>-</td>'
+                }else{
+                    codHTML+='<td>'+status.language+'</td>'
+                }
                 codHTML+='</tr>'
                 rotate=false
             }else{
                 codHTML+='<tr style="background-color:#E8E8E8;color:black">'
                 codHTML+='<th scope="row">'+ordem+'</th>'
                 codHTML+='<td>'+status.name+'</td>'
-                codHTML+='<td>'+status.html_url+'</td>'
-                codHTML+='<td>'+status.language+'</td>'
+                codHTML+='<td><a href="'+status.html_url+'" target=_blank>'+status.html_url+'</a></td>'
+                console.log(status.language)
+                if (status.language==null){
+                    codHTML+='<td>-</td>'
+                }else{
+                    codHTML+='<td>'+status.language+'</td>'
+                }               
                 codHTML+='</tr>'
                 rotate=true
             }
